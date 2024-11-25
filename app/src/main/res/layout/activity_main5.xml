@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:id="@+id/pmt_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/spm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Payment Method"
+        android:layout_below="@id/pmt_method"
+        android:layout_marginTop="12dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/spm"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/dbcd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Debit Card and Credit Card" />
+
+        <RadioButton
+            android:id="@+id/esp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EasyPaisa"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash on Delivery"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nxt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

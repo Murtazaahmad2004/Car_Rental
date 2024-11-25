@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dcinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Debit and Credit Card Info"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:layout_below="@id/dcinfo"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/cno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="XXXX XXXX XXXX XXXX"
+        android:layout_below="@id/dcinfo"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_credit_card_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Name"
+        android:layout_below="@id/cno"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/chn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Card Holder Name"
+        android:layout_below="@id/cno"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/exy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Expiry Year"
+        android:layout_below="@id/chn"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Expiry Year"
+        android:layout_below="@id/exy"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/exd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Expiry Date"
+        android:layout_below="@id/exy"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Expiry Date"
+        android:layout_below="@id/exy"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@id/exd"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
