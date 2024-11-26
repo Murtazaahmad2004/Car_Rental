@@ -38,8 +38,16 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String usernameText = username.getText().toString().trim();
+                String passwordText = password.getText().toString().trim();
+
+                if (usernameText.equals("admin") && passwordText.equals("admin1")) {
+                    Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                     startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
