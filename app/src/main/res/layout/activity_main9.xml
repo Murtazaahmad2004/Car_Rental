@@ -9,6 +9,7 @@
     android:background="@color/white">
 
     <TextView
+        android:id="@+id/book_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BOOKING DONE"
@@ -17,4 +18,11 @@
         android:layout_centerVertical="true"
         android:textAlignment="center"/>
 
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_below="@id/book_date"
+        android:layout_marginTop="300dp"/>
 </RelativeLayout>
