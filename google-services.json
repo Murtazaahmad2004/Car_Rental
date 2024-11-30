@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "2763728179",
+    "project_id": "friends-rent-a-car-f07b5",
+    "storage_bucket": "friends-rent-a-car-f07b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2763728179:android:2042bf8ee212594d788a46",
+        "android_client_info": {
+          "package_name": "com.example.carrental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzdaRFXf8IzkAlHDkzImbknL3a43sqtWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
