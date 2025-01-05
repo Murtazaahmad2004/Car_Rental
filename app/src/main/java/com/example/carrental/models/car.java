@@ -1,4 +1,4 @@
-package com.example.carrental;
+package com.example.carrental.models;
 
 public class car {
     private int imageResource;

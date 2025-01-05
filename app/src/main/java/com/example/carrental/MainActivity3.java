@@ -8,6 +8,9 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.carrental.models.CarAdapter;
+import com.example.carrental.models.car;
+
 import java.util.ArrayList;
 import java.util.List;
 
