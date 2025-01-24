@@ -23,6 +23,7 @@ public class MainActivity4 extends AppCompatActivity {
         EditText fname = findViewById(R.id.fname);
         EditText lname = findViewById(R.id.lname);
         EditText age = findViewById(R.id.age);
+        EditText id_no = findViewById(R.id.id_no);
 
         RadioGroup radioGroup = findViewById(R.id.radio_group);
         findViewById(R.id.radio_driver); // Fixed
@@ -43,6 +44,7 @@ public class MainActivity4 extends AppCompatActivity {
             String firstName = fname.getText().toString().trim();
             String lastName = lname.getText().toString().trim();
             String ageText = age.getText().toString().trim();
+            String id_noText = id_no.getText().toString().trim();
 
             // Validate fields
             if (firstName.isEmpty()) {
@@ -57,6 +59,11 @@ public class MainActivity4 extends AppCompatActivity {
 
             if (ageText.isEmpty()) {
                 Toast.makeText(MainActivity4.this, "Age is required", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if (id_noText.isEmpty()) {
+                Toast.makeText(MainActivity4.this, "ID Card No is required", Toast.LENGTH_SHORT).show();
                 return;
             }
 
